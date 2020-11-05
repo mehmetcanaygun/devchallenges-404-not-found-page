@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Space+Mono&display=swap&family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+
+header {
+  padding: 40px 77px;
+  font-family: "Inconsolata", monospace;
+  font-weight: bold;
+}
+
+.grid {
+  min-height: 100vh;
+  padding: 0 77px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.grid .img,
+.grid .info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.grid .img img {
+  max-width: 80%;
+}
+
+.grid .info h1 {
+  font-size: 4rem;
+  margin-bottom: 36px;
+  color: #333;
+}
+
+.grid .info p {
+  width: 50%;
+  font-size: 24px;
+  margin-bottom: 64px;
+  color: #4f4f4f;
+}
+
+.grid .info .btn {
+  background-color: #333;
+  color: #fff;
+  width: 216px;
+  height: 68px;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer {
+  padding: 40px 77px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 24px 20px;
+  }
+  .grid {
+    padding: 0 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .grid .img {
+    width: 100%;
+    padding: 24px 0;
+  }
+  .grid .img img {
+    margin: auto;
+    width: 100%;
+  }
+  .grid .info h1 {
+    font-size: 48px;
+  }
+  .grid .info p {
+    width: 100%;
+    font-size: 18px;
+  }
+}
